@@ -1213,7 +1213,7 @@ bool FileUtils::createDirectories(std::string_view path) const
         return fail;
     });
 
-    return fail;
+    return !fail;
 }
 
 namespace
